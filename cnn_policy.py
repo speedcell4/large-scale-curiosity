@@ -1,7 +1,7 @@
 import tensorflow as tf
 from baselines.common.distributions import make_pdtype
 
-from utils import getsess, small_convnet, activ, fc, flatten_two_dims, unflatten_first_dim
+from utils import activ, fc, flatten_two_dims, getsess, small_convnet, unflatten_first_dim
 
 
 class CnnPolicy(object):

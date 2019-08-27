@@ -4,7 +4,7 @@ An interface for asynchronous vectorized environments.
 
 import ctypes
 from abc import ABC, abstractmethod
-from multiprocessing import Pipe, Array, Process
+from multiprocessing import Array, Pipe, Process
 
 import gym
 import numpy as np

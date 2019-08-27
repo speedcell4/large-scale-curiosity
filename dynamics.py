@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 
 from auxiliary_tasks import JustPixels
-from utils import small_convnet, flatten_two_dims, unflatten_first_dim, getsess, unet
+from utils import flatten_two_dims, getsess, small_convnet, unet, unflatten_first_dim
 
 
 class Dynamics(object):

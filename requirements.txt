@@ -1,0 +1,7 @@
+pillow
+mpi4py
+baselines
+roboschool
+tensorflow
+numpy
+gym

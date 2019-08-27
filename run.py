@@ -11,16 +11,16 @@ import gym
 import tensorflow as tf
 from baselines import logger
 from baselines.bench import Monitor
-from baselines.common.atari_wrappers import NoopResetEnv, FrameStack
+from baselines.common.atari_wrappers import FrameStack, NoopResetEnv
 from mpi4py import MPI
 
-from auxiliary_tasks import FeatureExtractor, InverseDynamics, VAE, JustPixels
+from auxiliary_tasks import FeatureExtractor, InverseDynamics, JustPixels, VAE
 from cnn_policy import CnnPolicy
 from cppo_agent import PpoOptimizer
 from dynamics import Dynamics, UNet
 from utils import random_agent_ob_mean_std
-from wrappers import MontezumaInfoWrapper, make_mario_env, make_robo_pong, make_robo_hockey, \
-    make_multi_pong, AddRandomStateToInfo, MaxAndSkipEnv, ProcessFrame84, ExtraTimeLimit
+from wrappers import AddRandomStateToInfo, ExtraTimeLimit, MaxAndSkipEnv, MontezumaInfoWrapper, ProcessFrame84, \
+    make_mario_env, make_multi_pong, make_robo_hockey, make_robo_pong
 
 
 def start_experiment(**args):

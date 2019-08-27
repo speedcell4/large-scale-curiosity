@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-from utils import small_convnet, fc, activ, flatten_two_dims, unflatten_first_dim, small_deconvnet
+from utils import activ, fc, flatten_two_dims, small_convnet, small_deconvnet, unflatten_first_dim
 
 
 class FeatureExtractor(object):
